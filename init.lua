@@ -39,7 +39,7 @@ function reg_on_chat(name, msg)
 			plus_to_player(name)
 			local num = get_player(name)
 			if num >= 3 and num < 5 then
-				core.chat_send_all("### "..name.." left from cursing/swearing")
+				core.chat_send_all("*** "..name.." left from cursing/swearing")
 				core.disconnect_player(name, t("Broke the rule 2nd"))
 				return true
 			elseif num >= 5 then
